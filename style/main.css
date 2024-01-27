@@ -1,0 +1,113 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Figtree', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    background-color: var(--yellow);
+}
+
+
+
+main {
+    padding: 2rem;
+    background-color: var(--white);
+    border: solid 2.8px;
+    text-align: center;
+    border-radius: 25px;
+    max-width: 30rem;
+    box-shadow: 10px 10px var(--black);
+}
+
+.text-cont {
+    text-align: left;
+    padding-top: 2rem;
+}
+
+.text {
+    white-space: pre-line;
+}
+
+.img-container {
+    display: inline-block;
+}
+
+.img {
+    border-radius: 25px;
+    width: 480px;
+    vertical-align: middle;
+}
+
+.cimke {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: var(--yellow);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.date {
+    padding: 1.5rem 0 1.5rem 0;
+    font-weight: thin;
+}
+
+h2 {
+    padding-bottom: 1.5rem;
+}
+
+.description {
+    padding-bottom: 1.5rem;
+    font-weight: 100;
+    color: var(--grey)
+}
+
+.author-cont {
+    text-align: left;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.author-profile,
+.author {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cim:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+    main {
+        margin-left: 2rem;
+        margin-right: 2.5rem;
+        width: 20rem;
+    }
+
+    .img {
+        width: 20rem;
+    }
+
+    .cim:hover {
+        color: var(--black);
+        cursor: pointer;
+    }
+}
